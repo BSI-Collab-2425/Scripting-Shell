@@ -18,21 +18,26 @@ Ce script automatise l'installation d'un service Nginx pour le partage de dossie
 
 ### Installation du script :
 ```bash
-sudo apt update
+sudo cp nginx-installation-script.deb /var/cache/apt/archives/
+sudo chown _apt /var/cache/apt/archives/nginx-installation-script.deb
+sudo apt install -y /var/cache/apt/archives/nginx-installation-script.deb
 ```
 
 ## Utilisation
 ### Exécution du script :
 ```bash
-./script.sh
+sudo nginx-installation-script
 ```
 
 ### Options disponibles :
-1. **Install** : Lance l'installation des logiciels nécessaires.
-2. **Partager un dossier ou fichier** : Permet de sélectionner un fichier ou un dossier pour le partage.
+1. **Installer Nginx** : Lance l'installation de nginx
+2. **Configurer Nginx** : Configure Nginx, créé un utilisateur dédié à nginx et créé des règles de filtrage
+3. **Partager un dossier ou fichier** : Permet de sélectionner un fichier ou un dossier pour le partage.
+4. **Supprimer la configuration** : Supprime la configuration de nginx
+5. **Désinstaller Nginx** : Désinstallation nginx
 
 ## Exemple de sélection de fichier
-Lors de la sélection de l'option 2, une boîte de dialogue s'affiche demandant le chemin du fichier. L'utilisateur doit entrer le chemin absolu du fichier.
+Lors de la sélection de l'option 3, une boîte de dialogue s'affiche demandant à l'utilisateur s'il souhaite sélectionner un fichier ou dossier. Ensuite l'utilisateur sélectionne le chemin du fichier. Si le fichier fait parti de la liste des fichiers interdits, un message d'erreur apparaîtra.
 
 ## Gestion des erreurs
 - Si l'utilisateur annule une opération, le script affiche "Annulé." et se termine.
@@ -40,7 +45,7 @@ Lors de la sélection de l'option 2, une boîte de dialogue s'affiche demandant 
 
 
 ## Auteur
-**Manqui1 et flippeur**
+**Manqui1 et Fl1pp3r**
 
 ## Licence
 Ce projet est sous licence **MIT**.
