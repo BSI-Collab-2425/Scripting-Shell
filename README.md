@@ -18,15 +18,15 @@ Ce script automatise l'installation d'un service Nginx pour le partage de dossie
 
 ### Installation du script :
 ```bash
-sudo cp nginx-installation-script.deb /var/cache/apt/archives/
-sudo chown _apt /var/cache/apt/archives/nginx-installation-script.deb
-sudo apt install -y /var/cache/apt/archives/nginx-installation-script.deb
+sudo cp nginx-install-script.deb /var/cache/apt/archives/
+sudo chown _apt /var/cache/apt/archives/nginx-install-script.deb
+sudo apt install -y /var/cache/apt/archives/nginx-install-script.deb
 ```
 
 ## Utilisation
 ### Exécution du script :
 ```bash
-sudo nginx-installation-script
+sudo nginx-install-script
 ```
 
 ### Options disponibles :
