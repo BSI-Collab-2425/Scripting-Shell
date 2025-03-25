@@ -43,6 +43,11 @@ Lors de la sélection de l'option 3, une boîte de dialogue s'affiche demandant 
 - Si l'utilisateur annule une opération, le script affiche "Annulé." Et se termine.
 - Si aucun fichier ou chemin valide n'est fourni, une alerte est affichée.
 
+## Documentation  
+Une page de manuel est disponible pour plus d’informations sur l’utilisation du script :  
+```bash
+man nginx-install-script
+```
 
 ## Auteur
 **Manqui1 et Fl1pp3r**
