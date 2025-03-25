@@ -1,4 +1,4 @@
-# README - Script d'Installation
+# README - Script d'installation
 
 ## Description
 Ce script automatise l'installation d'un service Nginx pour le partage de dossiers, avec une configuration sécurisée garantissant la protection des données sur un système Linux. Il utilise whiptail pour fournir une interface utilisateur interactive et intuitive.
